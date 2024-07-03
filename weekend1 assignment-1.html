@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> MY WEBSITE </title>
+    </head>
+    <style>
+        .navigationBar{
+            background-color : #333;
+            overflow: hidden;
+        }
+        .navigationBar a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font size: 17px;
+        }
+        .navigationBar a:hover {
+background-color: #ddd;
+color: black;
+        }
+        .navigationBar a.active {
+            background-color: #04aa6d;
+            color: white;
+        }
+        </style>
+        <body>
+            <nav class="navigationBar">
+                <img src="" alt="logo" height="50">
+                <!--<p>my website</p>-->
+                <a class="active" href="#home" onClick="activeHome()" id="home">Home</a>
+                <a class="active" href="#contact" onClick="activeHome()" id="contact">contactus</a>
+            </nav>
+            <script type="text/javascript">
+                function activeHome() {
+                    document.getElementById("home").classList.add("active");
+                    document.getElementById("contact").classList.remove("active");
+                }
+                function activeFirst() {
+                    document.getElementById("home").classList.remove("active");
+                    document.getElementById("contact").classList.add("active");
+                }
+                </script>
+                <div>
